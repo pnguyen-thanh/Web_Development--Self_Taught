@@ -1,0 +1,48 @@
+/* * {
+    border: 3px red solid;
+} */
+
+body {
+    /* border: 3px pink solid; */
+}
+
+.main {
+    /* border: 3px solid blue; */
+    margin-top: 280px;
+}
+
+.logo-img, .search-input {
+    display: block;
+    margin: 0 auto;
+}
+
+.logo-img {
+    /* border: 3px orange solid; */
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+.search-input {
+    /* border: 3px green solid; */
+    width: 400px;
+    padding: 10px 30px;
+    border-radius: 24px;
+    border: 1px solid #dfe1e5;
+    margin-bottom: 25px;
+}
+
+.wrapper-btn {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    margin: 0 10px;
+    height: 36px;
+    padding: 0 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+}
+
