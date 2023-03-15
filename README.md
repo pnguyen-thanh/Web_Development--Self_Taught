@@ -27,3 +27,10 @@ Module_1:
         - Span tags
         - IDs & utility classes
         - Text-shadow
+
+    + Les_5: After the lesson, I learned about:
+        - Align items
+        - Flex directions
+        - :hover
+        - Gradients
+        - Grouping selector
