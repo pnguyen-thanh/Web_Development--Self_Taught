@@ -1,8 +1,15 @@
 # Learning-Web-Deb-Basic
 Module_1: 
-    + Les_1: After the lesson, I learned about core HTML tags, nesting, buttons, input fields, anchors tags, document structure, and lists.
+    + Les_1:
+        - Core HTML tags
+        - Nesting
+        - Buttons
+        - Input fields
+        - Anchors tags
+        - Document structure
+        - Lists.
 
-    + Les_2: After the lesson, I learned about:
+    + Les_2: 
         - CSS syntax
         - Inline vs Block
         - Margins
@@ -13,14 +20,14 @@ Module_1:
         - Centering
         - Flexbox
     
-    + Les_3: After the lesson, I learned about:
+    + Les_3: 
         - Images alt texts
         - Flex child container
         - Inheritance
         - Shorthand (Margin and Padding)
         - Web-safe fonts
     
-    + Les_4: After the lesson, I learned about:
+    + Les_4: 
         - Background Image
         - Webp format
         - Google Fonts
@@ -28,9 +35,20 @@ Module_1:
         - IDs & utility classes
         - Text-shadow
 
-    + Les_5: After the lesson, I learned about:
+    + Les_5: 
         - Align items
         - Flex directions
         - :hover
         - Gradients
         - Grouping selector
+
+Module 2:
+
+    + Les_1:
+        - Script tag
+        - Variables, numbers and strings
+        - The DOM
+        - getElementById();
+        - innerHTML
+        - innerText
+        - textContent
