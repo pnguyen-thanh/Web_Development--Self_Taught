@@ -52,3 +52,6 @@ Module 2:
         - innerHTML
         - innerText
         - textContent
+    
+    + Les_2:
+        - Basic JavaScript Syntax

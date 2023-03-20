@@ -1,0 +1,45 @@
+body {
+    background-image: url(images/julio-klinger-7mJ25gYnoV0-unsplash.jpg);
+    background-size: cover;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* border: 5px solid red; */
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+#container {
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 50%;
+    height: 50%;
+    background-color: #35654D;
+}
+
+h1 {
+    color: goldenrod;
+}
+
+#message-el {
+    font-style: italic;
+}
+
+/* #btns {
+    border: 3px solid red;
+
+} */
+
+.btn {
+    color: #35654D;
+    background-color: goldenrod;
+    width: 100px;
+    padding: 10px 0;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: inherit;
+    margin: 2px 0;
+}
