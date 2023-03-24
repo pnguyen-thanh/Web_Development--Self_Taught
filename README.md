@@ -55,3 +55,6 @@ Module 2:
     
     + Les_2:
         - Basic JavaScript Syntax
+
+    + Les_3:
+        - Building Chrome Extension using JavaScript, CSS and HTML
