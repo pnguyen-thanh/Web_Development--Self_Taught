@@ -58,3 +58,13 @@ Module 2:
 
     + Les_3:
         - Building Chrome Extension using JavaScript, CSS and HTML
+
+Module 3:
+
+    + Les_1:
+        - Semantic HTML
+        - Hover and active states using pseudo selector
+        - Specificity
+        - Compound selectors
+        - Inline-block
+        - Multiple classes on one element
