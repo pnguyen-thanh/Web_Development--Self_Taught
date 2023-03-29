@@ -68,3 +68,9 @@ Module 3:
         - Compound selectors
         - Inline-block
         - Multiple classes on one element
+    
+    + Les_2 and Les_3:
+        - margin: auto flex children
+        - position: relative & absolute
+        - align-self
+        - position: fixed
