@@ -67,10 +67,10 @@ main{
 .modal {
     display: none;
     position: fixed;
-    top: 0;
-    bottom: 0;
     right: 0;
     left: 0;
+    top: 0;
+    bottom: 0;
     margin: auto;
     height: 420px;
     width: 350px;
@@ -123,6 +123,10 @@ main{
     justify-content: center;
 }
 
+.sort {
+    flex-direction: row-reverse;
+}
+
 .modal-btn{
     padding: 10px 24px;
     cursor: pointer;
@@ -145,7 +149,7 @@ input{
     margin-top: 10px;
 }
 
-.modal-display-name{ 
+.modal-display-name{
     color: fuchsia;
 }
 
@@ -153,4 +157,14 @@ input{
     height: 140px;
     line-height: 23px;
     margin-bottom: 0;
+}
+
+.idiot-gif{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.idiot-gif img{
+    box-shadow: 1px 1px 3px #999;
+    border-radius: 5px;
 }

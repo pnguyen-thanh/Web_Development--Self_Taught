@@ -74,3 +74,13 @@ Module 3:
         - position: relative & absolute
         - align-self
         - position: fixed
+    
+    + Les_4:
+        - setTimeout
+        - element.style
+        - forms
+        - formData & .get()
+        - event.preventDefault
+        - CSS: row-reverse
+        - toggling classes
+        - 'disabled' attribute
