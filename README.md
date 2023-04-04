@@ -84,3 +84,12 @@ Module 3:
         - CSS: row-reverse
         - toggling classes
         - 'disabled' attribute
+
+        - for of
+        - import/export
+        - radio & checkbox inputs
+        - querySelector
+        - getElementsByClassName
+        - classList.remove()/add()
+        - .includes()
+        - .filter()
