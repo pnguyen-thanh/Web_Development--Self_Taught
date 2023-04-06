@@ -93,3 +93,12 @@ Module 3:
         - classList.remove()/add()
         - .includes()
         - .filter()
+
+        - textarea
+        - .forEach()
+        - data attribute
+        - conditionally render styles
+        - NOT operator (!)
+        - CDNs
+            add icons
+            generate UUID
