@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+    font-family: 'Smythe', cursive;
+    font-weight: 400;
+    background-color: #1C023E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 46px;
+    padding-right: 46px;
+}
+
+header {
+    background-image: url(./images/burger.jpg);
+    width: 600px;
+    height: 170px;
+    background-size: cover;
+    background-position: center;
+    color: #ffff;
+    margin: 0 auto;
+    /* border: 3px solid orange; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 46px;
+    padding-right: 46px;
+}
+
+h1,
+h4 {
+    margin:0;
+}
+
+h1 {
+    font-size: 39px;
+}
+
+h4 {
+    font-size: 22.4px;
+}
+
+main {
+    background-color: #F5F5F5;
+    margin: 0 auto;
+    width: 600px;
+    padding-left: 46px;
+    padding-right: 46px;
+}
+
+button {
+    cursor: pointer;
+}
+
+#item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+    /* border: 3px solid olivedrab; */
+    border-bottom: 1px solid #D2D2D2;
+}
+
+#inner-item {
+    display: flex;
+    width: 400px;
+    height: 135px;
+    /* border: 3px solid red; */
+    align-items: center;
+    justify-content: start;
+}
+
+#icon {
+    font-size: 78.72px;
+    width: 70px;
+    height: 89px;
+}
+
+#item-name,
+#ingredients,
+#item-price {
+    margin: 0;
+    padding-left: 31px;
+}
+
+#item-name {
+    font-size: 28px;
+    color: #000000;
+}
+
+#ingredients {
+    font-size: 16px;
+    color: #8B8B8B;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#item-price {
+    font-size: 20px;
+    color: #000000;
+}
+
+#add-item,
+#remove-item {
+    border: 1.5px solid #DEDEDE;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #F5F5F5;;
+    color: #3c3c3c;
+    font-size: 32px;
+    font-weight: 200;
+}
+
+#order-summary {
+    /* width: 508px;
+    height: 319px; */
+    /* border: 3px solid red; */
+    padding-left: 46px;
+    padding-right: 46px;
+}
+
+#your-order {
+    text-align: center;
+    font-size: 28px;
+}
+
+#order-list-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#order-list,
+#amount {
+    margin: 0;
+}
+
+#order-list {
+    font-size: 28px;
+}
+
+#amount,
+#final-amount {
+    font-size: 20px;
+}
+
+#due-container {
+    font-size: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #393333;
+    margin-top: 31px;
+}
+
+#due-title,
+#final-amount {
+    margin: 14px 0 53px 0;
+}
+
+#place-order-btn {
+    background: #16DB99;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    width: 508px;
+    height: 60px;
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 31px;
+    font-family: Verdana;
+}
+
+
+#user-information {
+    background: #FFFFFF;
+    border-radius: 3.88991px;
+    width: 524px;
+    height: 542.24px;
+    border: 5px solid red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#input-field { 
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    font-family: Verdana;
+    margin: 47px 0;
+}
+
+#user-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+#user-name,
+#credit-card-input,
+#cvv-input,
+#submit-btn {
+    width: 475.91px;
+    height: 71.3px;
+    background: #FFFFFF;
+    border-radius: 3.88991px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #757575;
+    font-family: Verdana;
+    padding-left: 26.5px;
+    border: 1.3px solid #757575;
+    margin-bottom: 23.5px;
+}
+
+#cvv-input {
+    margin-bottom: 0;
+}
+
+#submit-btn {
+    background-color: #16DB99;
+    color: #ffff;
+    font-weight: 700;
+    border: none;
+    margin: 46.5px 0 28px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+#good-bye {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 120px;
+    background: #ECFDF5;
+    border-radius: 3px;
+    font-weight: 400;
+    font-size: 32px;
+    color: #065F46;
+    margin: 45px 0 250px 0;
+}
