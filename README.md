@@ -102,3 +102,9 @@ Module 3:
         - CDNs
             add icons
             generate UUID
+    
+    + Les_5:
+        - Percentage, em, and rem
+        - Media queries and mobile-first
+        - flex-wrap and gap
+        - flex = (flex-basis, flex-grow)
