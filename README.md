@@ -74,8 +74,9 @@ Module 3:
         - position: relative & absolute
         - align-self
         - position: fixed
-    
-    + Les_4:
+
+Module 4:
+    + Les_1:
         - setTimeout
         - element.style
         - forms
@@ -102,9 +103,16 @@ Module 3:
         - CDNs
             add icons
             generate UUID
-    
-    + Les_5:
+Module 5:
+    + Les_1:
         - Percentage, em, and rem
         - Media queries and mobile-first
         - flex-wrap and gap
         - flex = (flex-basis, flex-grow)
+
+    + Les_2:
+        - Change the case of text
+        - Viewport units
+        - Flexbox order
+        - Box-sizing
+        - Style form elements, modifiers
