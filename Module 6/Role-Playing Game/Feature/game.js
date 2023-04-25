@@ -1,41 +1,67 @@
-/*
-CHALLENGE
-1. Convert our consts into two objects called 
-"monster" and "hero".
-2. Update the renderCharacter() function so that it accepts 
-a single object "data" as its parameter instead of five string/numbers, 
-reducing the number of arguments to pass in from five to one.
-3. Update the template now each variable is coming from "data".
-4. Update the function call.
-*/
+import characterData from './data.js'
+import Character from './Character.js'
 
-const character = [
-    {hero}
-]
+let monstersArray = ["orc", "demon", "goblin"]
+let isWaiting = false
 
-const heroElementId = "hero"
-const heroName = "Wizard"
-const heroAvatar = "images/wizard.png"
-const heroHealth = 60
-const heroDiceRoll = 6
-
-const monsterElementId = "monster"
-const monsterName = "Orc"
-const monsterAvatar = "images/orc.png"
-const monsterHealth = 10
-const monsterDiceRoll = 4
-
-function renderCharacter(elementId, name, avatar, health, diceRoll) {
-    document.getElementById(elementId).innerHTML =
-        `<div class="character-card">
-            <h4 class="name"> ${name} </h4>
-            <img class="avatar" src="${avatar}" />
-            <div class="health">health: <b> ${health} </b></div>
-            <div class="dice-container">
-                <div class="dice"> ${diceRoll} </div>
-            </div>
-        </div>`
+function getNewMonster() {
+    const nextMonsterData = characterData[monstersArray.shift()]
+    return nextMonsterData ? new Character(nextMonsterData) : {}
 }
 
-renderCharacter(heroElementId, heroName, heroAvatar, heroHealth, heroDiceRoll);
-renderCharacter(monsterElementId, monsterName, monsterAvatar, monsterHealth, monsterDiceRoll);
+function attack() {
+    if(!isWaiting){
+        wizard.setDiceHtml()
+        monster.setDiceHtml()
+        wizard.takeDamage(monster.currentDiceScore)
+        monster.takeDamage(wizard.currentDiceScore)
+        render()
+        
+        if(wizard.dead){
+            endGame()
+        }
+        else if(monster.dead){
+            isWaiting = true
+            if(monstersArray.length > 0){
+                setTimeout(()=>{
+                    monster = getNewMonster()
+                    render()
+                    isWaiting = false
+                },1500)
+            }
+            else{
+                endGame()
+            }
+        }    
+    }
+}
+
+function endGame() {
+    isWaiting = true
+    const endMessage = wizard.health === 0 && monster.health === 0 ?
+        "No victors - all creatures are dead" :
+        wizard.health > 0 ? "The Wizard Wins" :
+            "The monsters are Victorious"
+
+    const endEmoji = wizard.health > 0 ? "🔮" : "☠️"
+        setTimeout(()=>{
+            document.body.innerHTML = `
+                <div class="end-game">
+                    <h2>Game Over</h2> 
+                    <h3>${endMessage}</h3>
+                    <p class="end-emoji">${endEmoji}</p>
+                </div>
+                `
+        }, 1500)
+}
+
+document.getElementById("attack-button").addEventListener('click', attack)
+
+function render() {
+    document.getElementById('hero').innerHTML = wizard.getCharacterHtml()
+    document.getElementById('monster').innerHTML = monster.getCharacterHtml()
+}
+
+const wizard = new Character(characterData.hero)
+let monster = getNewMonster()
+render()
