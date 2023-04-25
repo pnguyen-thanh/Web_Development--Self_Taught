@@ -116,3 +116,25 @@ Module 5:
         - Flexbox order
         - Box-sizing
         - Style form elements, modifiers
+
+Module 6:
+    + Les_1:
+        - Object destructing
+        - The .map() method
+        - The .join() method
+        - Returning a function inside a function
+        - Creating new arrays with the Array constructor
+        - The .fill() method
+
+    + Les_2:
+        - Constructor function
+        - The "this" keyword
+        - Methods on constructor functions
+        - Object.assign
+        - Import/Export
+
+    + Les_3:
+        - .reduce() method
+        - The ternary operator
+        - Arrow function
+        - setTimeout method
