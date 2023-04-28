@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%);
+}
+
+#nav-bar {
+    display: flex;
+    border: 3px solid red;
+    padding: 1.25em 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-icon {
+    height: 42px;
+    width: 84px;
+}
+
+.icon {
+    width: 34px;
+    height: 34px;
+    margin: 0 0.625em;
+}
+
+.feature-suggestion {
+    display: grid;
+    grid-template-columns: 0.5em minmax(400px, 1fr) 0.5em;
+    grid-template-rows: auto auto;
+    position: relative;
+    grid-template-areas: 
+    ". pet-img ."
+    ". per-info .";
+}
+
+.pet-img {
+    width: 100%;
+    grid-area: "pet-img";
+    grid-column: 2 / -2;
+    border-radius: 15px;
+}
+
+.pet-info {
+    grid-area: "pet-info";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #f8f8f8;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    font-weight: 600;
+    font-size: 2rem;
+    grid-column: 2 / -2;
+    /* border: 3px solid green; */
+    margin: 0 0.4em 0.8em 0.4em;
+}
+
+h4 {
+    margin: 0;
+}
+
+.pet-bio {
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #b7b7b7;
+}
+
+.action-btn {
+    padding: 1.5em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+button {
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    border: none;
+    overflow: hidden;
+    background-color: #ffff;
+    cursor: pointer;
+}
+
+#like-btn:hover {
+    background: #DBFFF4;
+    box-shadow: 0px 10px 20px #CCF1E6;
+}
+
+#reject-btn:hover {
+    background: #FFE7EF;
+    box-shadow: 0px 10px 20px #EDD9DF;
+}
