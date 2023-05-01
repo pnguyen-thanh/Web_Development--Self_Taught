@@ -138,3 +138,22 @@ Module 6:
         - The ternary operator
         - Arrow function
         - setTimeout method
+
+Module 7:
+    + Les_1:
+        - Servers & Clients
+        - Requests/response cycle
+        - APIs
+        - JSON
+        - fetch syntax
+
+    + Les_2:
+        * HTTP request:
+            - URLs, endpoints
+            - Methods
+            - Body
+            - Headers
+        * REST APIs:
+            - Resources
+            - Parameters
+            - Queries
