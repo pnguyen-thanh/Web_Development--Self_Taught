@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #1F2937;
+    min-width: 620px;
+}
+
+#colorForm {
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 90px;
+    justify-content: center;
+    gap: 0.8125em;
+}
+
+#hexColor {
+    width: 61px;
+    height: 43px;
+    border: 0.5px solid #313131;
+}
+
+#colorSchemeSelect {
+    height: 42px;
+    width: 312px;
+    margin: 0;
+    background: #1F293A;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #D5D4D8;
+}
+
+button {
+    background: #3D4B60;
+    width: 123px;
+    height: 42px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: #ffffff;
+    /* font-style: normal; */
+}
+
+#colorSchemeDisplay {
+    display: flex;
+    flex-direction: row;
+}
+
+.colorBox {
+    flex: 1;
+    height: 100vh;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hexText {
+    color: 0.75rem;
+    font-weight: 500;
+    color: #D5D4D8;
+    padding: 0.9167em 0;
+}

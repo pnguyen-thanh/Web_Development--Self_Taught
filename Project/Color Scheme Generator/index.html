@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <header>
+            <form id="colorForm">
+                <input type="color" id="hexColor" name="color-picker">
+                <select id="colorSchemeSelect">
+                    <!-- Options will be populated by JavaScript -->
+                </select>
+                <button type="submit" id="getColorScheme">Get color scheme</button>
+            </form>
+        </header>
+        <main>
+            <div id="colorSchemeDisplay"></div>
+            <!-- Display color scheme -->
+        </main>
+        <script src="./index.js" type="module"></script>
+    </body>
+</html>
