@@ -157,3 +157,17 @@ Module 7:
             - Resources
             - Parameters
             - Queries
+    
+    + Les_3:
+        * Callbacks
+            - Functions as first-class objects
+            - Build own .filter()
+        * Promises
+            - Three states (pending, fulfilled, rejected)
+            - .then() and chaining
+        * War
+            - Deck of Cards API
+            - Styling & Layout
+            - Algorithm practice
+            - UX improvements
+        * Asynchronous/Await
