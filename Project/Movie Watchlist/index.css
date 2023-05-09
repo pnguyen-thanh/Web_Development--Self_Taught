@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /* min-width: 590px; */
+    width: 100vw;
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    position: relative;
+}
+
+h1 {
+    margin: 0;
+    font-weight: 800;
+    font-size: 2.6875rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;;
+}
+
+.background1 {
+    background-image: url(./images/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg);
+    height: 210px;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    
+}
+
+
+#title-page {
+    display: flex;
+    /* border: 3px solid green; */
+    height: inherit;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.background2 {
+    position: relative;
+
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 192px;
+    right: 50px;
+    left: 50px;
+}
+
+.search {
+    position: relative;
+    color: #374151;
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+.search-icon {
+    position: absolute;
+    top: 13px;
+    bottom: 10px;
+    left: 13px;
+    color: #9CA3AF;
+}
+
+.search-input {
+    width: 342px;
+    height: 38px;
+    background-color: #2E2E2F;
+    color: #A5A5A5;
+    padding-left: 2.93em;
+}
+
+#btn {
+    width: 120px;
+    height: 38px;
+    background-color: #4B4B4B;
+    color: #ffffff;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: stretch;
+    overflow: hidden; 
+    border-radius: 6px;
+}
+
+.main-container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* padding: 1075px 0; */
+    /* position: relative; */
+    position: absolute;
+    top: 500px;
+    bottom: 0;
+}
+
+.main-container i {
+    color: #2E2E2F;
+    font-size: 5rem;
+    margin-bottom: 0.4em;
+}
+
+.main-container p {
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: #2E2E2F;
+}
+
+.display-container {
+    display: grid;
+    grid-template-columns: 2.75em auto 1.3125em auto 2.75em;
+    grid-template-rows: 1.5625em 9.8175em 1.2875em;
+    grid-template-areas: 
+    ". poster . movie-information .";
+    /* border: 3px solid red; */
+    height: 246px;
+    /* position: absolute; */
+    border-bottom: 1.5px solid #2C2C2C;
+    /* padding: 0 2.75em; */
+    /* padding-top: 1000px; */
+}
+
+.poster {
+    grid: "poster";
+    grid-row: 2/-2;
+    grid-column: 2;
+    width: 100px;
+    height: 157.08px;
+    border-radius: 2.32941px;
+}
+
+.movie-information {
+    grid: "movie-information";
+    grid-row: 2/-2;
+    grid-column: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-rating {
+    display: flex;
+    flex-direction: row;
+    /* gap: 1em; */
+    border: 3px solid green;
+    width: 777px;
+    align-items: center;
+    gap: 0.3125em;
+}
+
+.title-rating h1 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    /* color: #ffffff; */
+}
+
+.title-rating i {
+    font-size: 0.9375rem;
+}
+
+.title-rating p {
+    font-size: 0.75rem;
+    font-weight: 400;
+
+}
+
+.title-rating,
+.title-rating h1,
+.title-rating i,
+.title-rating p,
+.runtime-genre,
+.runtime-genre p,
+.runtime-genre button,
+.runtime-genre i,
+.runtime-genre span,
+.plot {
+    margin: 0;
+    padding: 0;
+}
+
+.runtime-genre p {
+    font-size: 0.75rem;
+    font-weight: 400;
+    /* color: #ffffff; */
+}
+
+.runtime-genre i {
+    font-size: 1rem;
+}
+
+.runtime-genre button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    /* padding: 5px; */
+}
+
+.runtime-genre {
+    display: flex;
+    margin: 0;
+    width: 777px;
+}
+
+.plot {
+    color: #A5A5A5;
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+.movie-container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 157.08px;
+}
