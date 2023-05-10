@@ -171,3 +171,12 @@ Module 7:
             - Algorithm practice
             - UX improvements
         * Asynchronous/Await
+
+    + Lec_4:
+        - Clients/Servers
+        - Requests/Response cycle
+        - JSON
+        - fetch/.then()
+        - Requests(methods, headers, body, URL)
+        - REST API Design
+        - Async JavaScript (callbacks, promises, async/await)
