@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito';
+    height: 100vh;
+}
+
+header {
+    background: #3D5262;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+a.logo {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1em .5em 0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background: #1D2226;
+    width: 66%;
+    visibility: hidden;
+    transform: translateX(50%);
+    opacity: 0;
+    transition: all .3s;
+}
+
+.exit {
+    width: 2em;
+    float: right;
+    margin: .5em;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 4em;
+}
+
+li a {
+    color: #7B8994;
+    text-decoration: none;
+    display: block;
+    padding: .5em 1em;
+}
+
+.open {
+    cursor: pointer;
+    margin: .5em;
+}
+
+.active a {
+    color: #008AF8;
+    font-weight: bold;
+}
+
+li a:hover {
+    background: #2E363D;
+}
+
+.open-nav {
+    visibility: unset;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Your CSS Here */
+
+.submenu {
+    padding: 0 1em;
+}
+
+.submenu p {
+    margin: 1em 0 1em 1em;
+    color: #707D88;
+    line-height: 1.4em;
+}
+
+.submenu ul {
+    margin: 1em 0 1em;
+}
+
+.submenu a {
+    font-weight: normal;
+    color: #7B8994;
+    background: none;
+    font-weight: bold;
+}
+
+.submenu a:hover {
+    background: none;
+}
+
+li a {
+    font-weight: bold;
+    background: #282E33;
+    margin-bottom: 2px;
+}
+
+@media (min-width: 500px) {
+    .open, .exit {
+        display: none;
+    }
+    
+    nav {
+        visibility: unset;
+        background: none;
+        position: unset;
+        height: auto;
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    ul {
+        display: flex;
+        margin-top: auto;
+        width: auto;
+        float: right;
+        margin: 0;
+    }
+    
+    li a {
+        color: #ADDBFF;
+        display: block;
+        padding: 1em;
+    }
+    
+    .active a {
+        color: white;
+    }
+    
+    
+    
+    /* Added CSS */
+    
+    header {
+        overflow: visible;
+    }
+    
+    .sub {
+        position: relative;
+    }
+    
+    .submenu {
+        display: none;
+    }
+
+    .sub:hover .submenu {
+        display: flex;
+        position: absolute;
+        top: 3.3em;
+        right: 0;
+        background: white;
+        padding: 1em 2em;
+        box-shadow: 10px 10px 15px rgba(0,0,0,0.07);
+    }
+    
+    /* Your CSS Here */
+
+    .submenu ul {
+        display: block;
+        margin: 1.5em 0 0;
+    }
+    
+    .submenu li a {
+        padding: 0 0 .5em 0;
+        font-weight: bold;
+        color: #1D2226;
+        font-size: .7em;
+        text-transform: uppercase;
+    }
+    
+    .submenu p {
+        min-width: 12em;
+        padding-left: 1em;
+        border-left: 1px solid gray;
+    }
+    
+}
