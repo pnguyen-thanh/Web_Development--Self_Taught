@@ -180,3 +180,8 @@ Module 7:
         - Requests(methods, headers, body, URL)
         - REST API Design
         - Async JavaScript (callbacks, promises, async/await)
+
+Module 9: 
+    + Les_1:
+        - Props
+        - Mapping Data
