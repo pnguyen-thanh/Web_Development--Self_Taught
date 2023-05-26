@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.25em;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    color: #ffffff;
+}
+
+.header-container h1,
+.header-container p {
+    margin: 0;
+}
+
+.header-container h1 {
+    font-weight: 700;
+    font-size: 1.3125rem;
+}
+
+.header-container p {
+    font-weight: 500;
+    font-size: 0.75rem;
+}
+
+.logo-container { 
+    display: flex;
+    align-items: center;
+    gap: 0.4375em;
+}
+
+.logo-container img {
+    width: 31.31px;
+    height: 26.22px;
+}
+
+.main-container {
+    margin: 2.25em;
+}
+
+
+.form-container {
+    display: grid;
+    grid-template-columns: auto 1.0625em auto;
+    grid-template-rows: auto 0.9375em auto 2.25em auto;
+    grid-area: 
+    "input1 . input2",
+    ". . ."
+    "btn btn btn"
+    ". . ."
+    "img img img"
+}
+
+.form-container input {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #D5D4D8;
+    font-family: 'Karla', sans-serif;
+    text-indent: 5px;
+    border-radius: 5px;
+}
+
+.form-container button {
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Karla', sans-serif;
+    border: none;
+    text-align: center;
+}
+
+.form-container input:nth-of-type(1) {
+    grid: "input1";
+    grid-column: 1;
+    
+}
+
+.form-container input:nth-of-type(2) {
+    grid: "input2";
+    grid-column: 3;
+}
+
+.form-container button {
+    grid: "btn";
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+
+.form-container .meme {
+    grid: "img";
+    grid-column: 1/4;
+    grid-row: 5;
+    position: relative;
+}
+
+.meme--image {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.meme--text {
+    position: absolute;
+    text-align: center;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+
+.top {
+    top: 0;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+
+

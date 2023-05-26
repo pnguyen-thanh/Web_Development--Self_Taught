@@ -185,3 +185,13 @@ Module 9:
     + Les_1:
         - Props
         - Mapping Data
+    
+    + Les_2:
+        - Event listeners
+        - State
+        - Conditional rendering
+        - Forms
+        - Side effects & how to handle them
+    
+    + Les_3:
+        -
