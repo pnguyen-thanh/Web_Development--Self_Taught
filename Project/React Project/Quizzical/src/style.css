@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    color: #293264;
+    height: 100vh;
+    position: relative;
+    background-color: #F5F7FB;
+}
+
+.main-container {
+    padding: 2.5em 4.6875em ;
+}
+
+.intro-container button {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1.5em auto 0 auto;
+    color: #F5F7FB;
+    background: #4D5B9E;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    display: block;
+    border: none;
+    cursor: pointer;
+}
+
+.intro-container {
+    /* border: 3px solid red; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 250px;
+}
+
+.intro-container h1,
+.intro-container p {
+    margin: 0;
+}
+
+.intro-container h1 {
+    font-weight: 700;
+    font-size: 2rem;
+
+}
+
+.intro-container p {
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0.4375em 0 1.8125em 0;
+}
+
+.intro-container button {
+    color: #F5F7FB;
+    background-color: #4D5B9E;
+    width: 193px;
+    height: 52px;
+    border-radius: 15px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.qa-container hr {
+    margin: 0.9375em 0;
+    border: 0.794239px solid #DBDEF0;
+    transform: rotate(-0.05deg);
+}
+
+.answer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0 1.2em 0;
+}
+
+.qa-container h1,
+.qa-container p {
+    margin: 0;
+}
+
+.qa-container h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.answer-container p {
+    font-size: 1rem;
+    font-weight: 500;
+    border: 0.794239px solid #4D5B9E;
+    border-radius: 7.94239px;
+    max-width: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3em 0.8em;
+    cursor: pointer;
+    text-align: center;
+}
+
+.check-answer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid red; */
+    gap: 50px;
+    margin: 1.5em auto 0 auto;
+}
+
+.check-answer button { 
+    font-size: 1rem;
+    font-weight: 600;
+    color: #F5F7FB;
+    background: #4D5B9E;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    display: block;
+    border: none;
+    cursor: pointer;
+}
+
+.check-answer p {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
