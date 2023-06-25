@@ -1,0 +1,72 @@
+import * as THREE from 'three'
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
+
+const scene = new THREE.Scene()
+
+// Create an empty geometry object to hold the shape
+const triangleGeometry = new THREE.BufferGeometry()
+
+// Define the positions of the triangle vertices in a Float32Array
+const triangleVertices = new Float32Array([
+    0, 0, 0, // Vertex 1: x, y, z
+    0, 1, 0, // Vertex 2: x, y, z
+    1, 0, 0  // Vertex 3: x, y, z
+])
+
+// Create an attribute to interpret the vertices array for the geometry
+const triangleVerticesAttribute = new THREE.BufferAttribute(triangleVertices, 3)
+triangleGeometry.setAttribute('position', triangleVerticesAttribute)
+
+
+const cube = new THREE.Mesh(triangleGeometry ,new THREE.MeshBasicMaterial({color: 'red', wireframe: true}))
+scene.add(cube)
+
+const sizes = {
+    width: window.innerWidth,
+    height: window.innerHeight
+}
+
+const canvas = document.querySelector('.webgl')
+
+window.addEventListener('resize', () => {
+    sizes.width = window.innerWidth
+    sizes.height = window.innerHeight
+    camera.aspect = sizes.width / sizes.height
+    camera.updateProjectionMatrix()
+    renderer.setSize(sizes.width, sizes.height)
+})
+
+window.addEventListener('dblclick', () => {
+    const isFullScreen = document.fullscreenElement || document.webkitFullScreenElement
+    if (!isFullScreen) {
+        if (canvas.requestFullscreen) {
+            canvas.requestFullscreen()
+        } else if (canvas.webkitFullScreenElement) {
+            canvas.webkitFullScreenElement()
+        }
+    } else {
+        if (document.exitFullscreen) {
+            document.exitFullscreen()
+        } else if (document.webkitExitFullScreen) {
+            document.webkitExitFullScreen()
+        }
+    }
+})
+
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100)
+camera.position.z = 3
+scene.add(camera)
+
+const renderer = new THREE.WebGLRenderer({canvas: canvas})
+renderer.setSize(window.innerWidth, window.innerHeight)
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+const controls = new OrbitControls(camera, canvas)
+controls.enableDamping = true
+
+const animation = () => {
+    controls.update()
+    renderer.render(scene, camera)
+    requestAnimationFrame(animation)
+}
+
+// animation()
